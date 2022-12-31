@@ -1,2 +1,5 @@
 # VS Code Settings
 .vscode/
+
+# Code for Quick Testing
+testing.py
