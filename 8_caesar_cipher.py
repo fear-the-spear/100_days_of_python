@@ -1,5 +1,4 @@
 # functions with inputs
-from art import logo
 import math
 function = '''
 def my_function(something): <-- 'something' is the parameter
@@ -172,6 +171,7 @@ def caesar(start_text, shift_amt, dir):
 caesar(start_text=text, shift_amt=shift, dir=direction)
 
 # caesar cipher part 4 - user experience improvements & final touches
+# from art import logo
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
             'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
