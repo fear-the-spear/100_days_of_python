@@ -4,3 +4,6 @@
 # Code for Quick Testing
 testing.py
 tempCodeRunnerFile.py
+
+# Cached Files
+__pycache__/
