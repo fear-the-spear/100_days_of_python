@@ -7,3 +7,6 @@ tempCodeRunnerFile.py
 
 # Cached Files
 __pycache__/
+
+# Apple Desktop Services Store File
+.DS_Store
