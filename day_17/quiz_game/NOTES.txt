@@ -1,0 +1,7 @@
+The data used in 'data.py' was generated via this website:
+
+  ```
+    https://opentdb.com/
+  ```
+
+It's API and usage is explained by Angela Yu in Section 17, Video #162
