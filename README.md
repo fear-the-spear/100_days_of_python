@@ -1,9 +1,8 @@
 # 100_days_of_python
 
-Thank you for taking the time to read this! In this repo, you will find my full notes from the '100 Days Of Code' Python course on Udemy.
-Although it is a paid course, these notes are free.
+Thank you for taking the time to read this! In this repo, you will find my full notes and projects from the '100 Days Of Code' Python course on Udemy. The course is paid, but the notes are free! ;]
 
-Each file is a full day, or section, worth of notes. This includes notes from every video within that section, and the completed challenges.
+Each day has it's own folder. The daily folders are grouped into 10-day increments; e.g. 'day_1-10'.
 
 Feel free to use and share them however and with whomever you choose.
 
