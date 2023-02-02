@@ -10,3 +10,6 @@ __pycache__/
 
 # Apple Desktop Services Store File
 .DS_Store
+
+# Python Virtual Enviornment Files/Folders
+Pipfile
