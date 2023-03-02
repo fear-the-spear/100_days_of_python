@@ -2,7 +2,6 @@ from turtle import Screen
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
-from score_keeper import ScoreKeeper
 import time
 
 screen = Screen()
@@ -14,7 +13,6 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
-record_score = ScoreKeeper()
 player = screen.textinput(
     title="Welcome to the classic Snake Game!", prompt="Please enter your initials: ")
 
@@ -50,7 +48,5 @@ while is_game_on:
         if snake.head.distance(segment) < 10:
             is_game_on = False
             scoreboard.game_over()
-
-record_score.record_score(user_name=player, score=scoreboard.score)
 
 screen.exitonclick()
