@@ -13,8 +13,6 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
-player = screen.textinput(
-    title="Welcome to the classic Snake Game!", prompt="Please enter your initials: ")
 
 screen.listen()
 screen.onkey(snake.up, "Up")
