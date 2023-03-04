@@ -15,3 +15,6 @@ __pycache__/
 Pipfile
 requirements.txt
 venv/
+
+# Local Data Files (high scores, etc.)
+high_score.txt
