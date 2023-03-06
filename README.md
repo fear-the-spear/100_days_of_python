@@ -1,4 +1,4 @@
-# 100_days_of_python
+# **100_days_of_python**
 
 Thank you for taking the time to read this! In this repo, you will find my full notes and projects from the '100 Days Of Code' Python course on Udemy. The course is paid, but the notes are free! ;]
 
@@ -10,9 +10,9 @@ Happy coding!
 
 Dakota B.
 
-## Instructor Info
+## **Instructor Information**
 
 Below you will find a link to a podcast with Angela Yu, the instructor for
 this course:
 
-http://www.theappguy.co/the-app-guy-podcast/2016/7/1/tagp474-angela-yu
+- http://www.theappguy.co/the-app-guy-podcast/2016/7/1/tagp474-angela-yu
