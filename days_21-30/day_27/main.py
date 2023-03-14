@@ -12,14 +12,13 @@ window.minsize(width=500, height=300)
 # Label
 # first, specify type
 my_label = tkinter.Label(text="I am a label", font=("Courier", 24, "bold"))
-# then, specify how component will be laid out on screen
-my_label.pack()  # with no arguments, goes to top center
-
 # changing value of 'text'
 # 1. access it like a dictionary
 my_label["text"] = "New Text"
 # 2. use `.config()`
 my_label.config(text="Even Newer Text")
+# then, specify how component will be laid out on screen
+my_label.grid(column=0, row=0)
 
 # Button
 # click function
@@ -35,12 +34,21 @@ def click():
 # `command` is listener
 button = tkinter.Button(text="Click Me", command=click)
 # specify layout on screen
-button.pack()
+button.grid(column=1, row=1)
 
 # Entry (an input)
 # as always, specify type and then use `.pack()` to place on screen
 input = tkinter.Entry(width=10)
-input.pack()
+input.grid(column=2, row=2)
 
 # main loop that keeps the gui (window) on-screen
 window.mainloop()  # always keep at very end of program
+
+# NOTE: There are 3 ways to lay out widgets (components) on screen:
+#         `.pack()` uses the `side` attribute
+#            - not specific enough if you have lots of widgets
+#         `.place()` uses coordinates
+#            - too specific in most cases
+#         `.grid()` divides screen into any num of rows and columns
+#            - this is overall the best way to lay out widgets
+#            - all items are placed relative to each others' positions
