@@ -6,6 +6,7 @@ import tkinter
 window = tkinter.Tk()
 window.title("My First GUI Program")
 window.minsize(width=500, height=300)
+window.config(padx=20, pady=20)
 
 # create components to put inside window
 
@@ -16,7 +17,7 @@ my_label = tkinter.Label(text="I am a label", font=("Courier", 24, "bold"))
 # 1. access it like a dictionary
 # my_label["text"] = "Text"
 # 2. use `.config()`
-my_label.config(text="New Text")
+my_label.config(text="New Text", padx=20, pady=20)
 # then, specify how component will be laid out on screen
 my_label.grid(column=0, row=0)
 
