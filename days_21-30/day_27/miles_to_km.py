@@ -1,15 +1,15 @@
 import tkinter
 
-window = tkinter.Tk()
-window.title("Miles To Kilometers Converter")
-window.config(padx=20, pady=20)
-
 
 def calculate():
     miles_data = float(input.get())
     km_data = round(miles_data * 1.60934, 2)
     km_result_label.config(text=f"{km_data}")
 
+
+window = tkinter.Tk()
+window.title("Miles To Kilometers Converter")
+window.config(padx=20, pady=20)
 
 is_equal_label = tkinter.Label(text="is equal to")
 is_equal_label.grid(column=0, row=1)
