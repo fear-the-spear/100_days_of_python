@@ -20,6 +20,11 @@ window = tkinter.Tk()
 window.title("Pomodoro Timer")
 window.config(padx=100, pady=50, bg=YELLOW)
 
+# TITLE
+title = tkinter.Label(text="Timer", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 50))
+title.grid(column=1, row=0)
+
+# CANVAS
 canvas = tkinter.Canvas(width=200, height=224,
                         bg=YELLOW, highlightthickness=0)
 tomato_img = tkinter.PhotoImage(file="tomato.png")
@@ -28,12 +33,18 @@ canvas.create_text(100, 130, text="00:00", fill="white",
                    font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
 
-title = tkinter.Label(text="Timer", fg=GREEN, bg=YELLOW,
-                      font=(FONT_NAME, 42, "normal"))
-title.grid(column=1, row=0)
-start_button = tkinter.Button(text="Start", highlightbackground=YELLOW)
+# START BUTTON
+start_button = tkinter.Button(
+    text="Start", highlightbackground=YELLOW, width=2)
 start_button.grid(column=0, row=2)
-reset_button = tkinter.Button(text="Reset", highlightbackground=YELLOW)
+
+# RESET BUTTON
+reset_button = tkinter.Button(
+    text="Reset", highlightbackground=YELLOW, width=2)
 reset_button.grid(column=2, row=2)
+
+# CHECK BOX
+check_box = tkinter.Label(text=" ✔︎ ", fg=GREEN, bg=YELLOW)
+check_box.grid(column=1, row=3)
 
 window.mainloop()
