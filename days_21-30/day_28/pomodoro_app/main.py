@@ -10,8 +10,17 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
+timer = None
 # ------------------------------ TIMER RESET --------------------------------- #
 
+
+def reset_timer():
+    window.after_cancel(timer)
+    canvas.itemconfig(timer_text, text="00:00")
+    title["text"] = "Timer"
+    check_marks["text"] = ""
+    global reps
+    reps = 0
 # ---------------------------- TIMER MECHANISM ------------------------------- #
 
 
@@ -26,12 +35,15 @@ def start_timer():
     if reps % 8 == 0:
         count_down(long_break_sec)
         title.config(text="Break", fg=RED)
+        window.attributes("-topmost", 1)
     elif reps % 2 == 0:
         count_down(short_break_sec)
         title.config(text="Break", fg=PINK)
+        window.attributes("-topmost", 1)
     else:
         count_down(work_sec)
         title.config(text="Work", fg=GREEN)
+        window.attributes("-topmost", 0)
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
 
 
@@ -44,9 +56,12 @@ def count_down(count):
         count_sec = f"0{count_sec}"
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
-        window.after(1, count_down, count - 1)
+        global timer
+        timer = window.after(1, count_down, count - 1)
     else:
         start_timer()
+        if reps % 2 == 0:
+            check_marks["text"] += "✔︎ "
 
 
 # -------------------------------- UI SETUP ---------------------------------- #
@@ -74,11 +89,11 @@ start_button.grid(column=0, row=2)
 
 # RESET BUTTON
 reset_button = tkinter.Button(
-    text="Reset", highlightbackground=YELLOW, width=2)
+    text="Reset", highlightbackground=YELLOW, width=2, command=reset_timer)
 reset_button.grid(column=2, row=2)
 
 # CHECK BOX
-check_marks = tkinter.Label(text=" ✔︎ ", fg=GREEN, bg=YELLOW)
+check_marks = tkinter.Label(fg=GREEN, bg=YELLOW)
 check_marks.grid(column=1, row=3)
 
 window.mainloop()
