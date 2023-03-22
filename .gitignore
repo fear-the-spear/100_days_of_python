@@ -18,3 +18,4 @@ venv/
 
 # Local Data Files (high scores, etc.)
 high_score.txt
+data.txt
