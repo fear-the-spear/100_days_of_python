@@ -33,6 +33,12 @@ def gen_pass():
 
 
 def save():
+    '''
+    'Save' button-press functionality:
+
+    Saves user-entered data from all data fields into a
+    file called 'data.txt' - unless one or more fields is empty.
+    '''
     web_addr = web_entry.get()
     email = user_entry.get()
     passwd = passwd_entry.get()
