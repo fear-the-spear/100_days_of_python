@@ -1,0 +1,3 @@
+For this version of 'Password Manager', we will be changing our 'data.txt' file
+to a 'data.json' file. We will also be using exception handling to make the
+project even better. :) 
