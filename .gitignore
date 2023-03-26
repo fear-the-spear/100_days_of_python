@@ -13,7 +13,6 @@ __pycache__/
 
 # Python Virtual Enviornment Files/Folders
 Pipfile
-requirements.txt
 venv/
 
 # Local Data Files (high scores, etc.)
