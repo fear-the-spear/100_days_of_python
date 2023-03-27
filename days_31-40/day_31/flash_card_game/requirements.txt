@@ -1,0 +1,6 @@
+Package     Version
+----------- -------
+autopep8    2.0.2
+pip         23.0.1
+pycodestyle 2.10.0
+setuptools  65.5.0
