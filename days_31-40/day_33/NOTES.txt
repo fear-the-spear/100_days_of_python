@@ -36,3 +36,21 @@ NOTES on API's
   cupboards. That's what the menu is for. The menu serves as a sort of interface
   between you and the resaurant. It's the thing that tells you what you can
   and can't order. This is exactly what an API is - a menu.
+
+- API Endpoints
+  An API endpoint is one of the most important aspects of an API. This endpoint
+  is a location. If we want to get data from an external service, we need to
+  know that data's location. For example: when you get money out of a bank, you
+  first need to know where that bank is and what is it's address. As it pertains
+  to an API, that endpoint is usually in the form of a URL. So, if you wanted
+  to get data from Coinbase, that endpoint URL is 'api.coinbase.com'
+
+- API Request
+  In addition to knowing the API endpoint, you also have to make a request over
+  the internet. This API request is similar to going to the bank to get some
+  money out (trying to withdrawl some data). In this case, the bank teller is
+  acting as the API. You can make all kinds of requests to the teller, such as:
+  "I'd like to withdrawl $XX.XX", which requires you to provide some ID and a
+  bank account number. But you can also perform simpler "GET" requests, such as:
+  "What are your opening hours?". Requests like that would require no type of
+  authentication.
