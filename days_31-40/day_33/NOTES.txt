@@ -1,6 +1,38 @@
 NOTES on API's
 
-What is an API (Application Programming Interface)
-- An API is a set of commands, functions, objects, and protocols
-  that programmers can use to create software or interact
-  with an external system
+
+- What is an API (Application Programming Interface)
+  An API is a set of commands, functions, objects, and protocols that
+    programmers can use to create software or interact with an external system.
+
+  This means that live data can be pulled from certain websites
+    and used within our own python programs.
+
+  An API is an interface, or a barrier, between your program and
+    an external system.
+
+  Use the rules that the API has prescribed to make a request to the
+    external system for some piece of data.
+
+  If you have structured your request according to all of the requirements
+    that this external system has set out in their API, they will respond to
+    you appropriately and give you the data that you want.
+
+  BUT, if you don't follow the rules, then your request will be invalid and
+    they will tell you to go away.
+
+- Some examples of websites that have their own API's
+  Yahoo! Weather has their own weather API that can be tapped into to get
+    10-day weather forecasts, wind, atmosphere & astronomy conditions.
+
+  Coinbase has an API that let's you tap into the current live prices of crypto
+
+  NBA also has an API for getting various stats and info on players, teams,
+    coaches, leagues, historical and other advanced data.
+
+- A Metaphor That Explains API's:
+  Imagine the website as a restaurant and the data as the kitchen.
+  As a member of the public, we can't just walk in and start raiding the
+  cupboards. That's what the menu is for. The menu serves as a sort of interface
+  between you and the resaurant. It's the thing that tells you what you can
+  and can't order. This is exactly what an API is - a menu.
