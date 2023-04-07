@@ -60,4 +60,5 @@ NOTES on API's
   300's: You don not have permission to access this thing.
   400's: You screwed up.
   500's: The server screwed up.
-  404: The thing you're looking for does not exist.
+  * For a more detailed list, visit https://httpstatuses.com
+  
