@@ -1,6 +1,5 @@
 NOTES on API's
 
-
 - What is an API (Application Programming Interface)
   An API is a set of commands, functions, objects, and protocols that
     programmers can use to create software or interact with an external system.
@@ -54,3 +53,11 @@ NOTES on API's
   bank account number. But you can also perform simpler "GET" requests, such as:
   "What are your opening hours?". Requests like that would require no type of
   authentication.
+
+- Response Codes
+  100's: Hold on. Something is happening. This is not final.
+  200's: Here you go! Everything was successful.
+  300's: You don not have permission to access this thing.
+  400's: You screwed up.
+  500's: The server screwed up.
+  404: The thing you're looking for does not exist.
