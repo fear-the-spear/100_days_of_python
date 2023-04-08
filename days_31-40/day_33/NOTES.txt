@@ -62,4 +62,14 @@ NOTES on API's
   400's: You screwed up.
   500's: The server screwed up.
   * For a more detailed list, visit https://httpstatuses.com
-  
+
+- API Parameters
+  An API parameter is a way that allows you to give an input when you are making
+    your API request. This enables you to get different pieces of data back,
+    depending on the input. This works in the same way that a function would, by
+    giving a single function different inputs to get a different outcome.
+
+  Going back to the bank analogy; instead of asking a very broad question like:
+    "What are your hours?", you could ask: "What time do you close on Monday?",
+    or, "What time do you close on Tuesday?". This is similar to passing params
+    to a function to get information cooresponding to the inputs given.
