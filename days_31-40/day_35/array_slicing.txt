@@ -1,0 +1,14 @@
+Array Slicing
+
+We have gone through this in previous lessons, but here's a refresher:
+
+- Slicing
+a[start:stop]         # items start through stop - 1
+a[start:]             # items start through the rest of the way
+a[:stop]              # items from the beginning through stop - 1
+a[:]                  # a copy of the whole array
+
+There is also the step `step` value, which can be used with any of the above:
+
+- Step
+a[start:stop:step]    # start through not past stop, by step
