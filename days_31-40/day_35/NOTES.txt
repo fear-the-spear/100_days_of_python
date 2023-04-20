@@ -1,0 +1,12 @@
+NOTES on API Keys, Authentication, Environment Variables, and Sending SMS
+
+- API Keys
+  Most APIs that provide simple information (like the sunrise and sunset API)
+    are free of charge. However, there are tons of APIs out there that provide
+    more valuable information. That information usually comes at a cost. But
+    even the paid APIs will offer a free tier. That's where API keys come in.
+
+  An API key is sort of like a personal account number and password for access
+    to a certain API. This is how the API provider can track how much you are
+    using their API, authorize your access, or deny your access once you have
+    gone over the limit.
