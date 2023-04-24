@@ -1,0 +1,19 @@
+NOTES on Advanced Authentication and POST / PUT / DELETE Requests
+
+- HTTP Requests
+  GET:    requests.get()
+  POST:   requests.post()
+  PUT:    requests.put()
+  DELETE: requests.delete()
+
+  GET: ask for a piece of data from API, and they give us data as response
+    e.g. getting weather data from the Open Weather Map API
+  POST: we give the external system a piece of data. we aren't interested in
+    the response, other than if it was or wasn't successful.
+    e.g. if you want to save a piece of data to Google Sheets with their API,
+    you would use a POST requests to post that data. Twitter also has an API
+    that you could use to post a tweet.
+  PUT: update a piece of data in the external service.
+    e.g. if you have data in Google Sheets that you just want to update, use a
+    PUT request
+  DELETE: quite simply, delete a piece of data in the external service
