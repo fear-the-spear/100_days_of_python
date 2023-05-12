@@ -1,0 +1,9 @@
+- Non-Void Elements
+  Void elements are elements with content between the tags, e.g.:
+  <h1>Heading</h1>
+  <p1>Paragraph</p1>
+
+- Void Elements
+  Void elements are self-closing tags
+  <hr /> (horizontal rule element)
+  <br /> (break element)
