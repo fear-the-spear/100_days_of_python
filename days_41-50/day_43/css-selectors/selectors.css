@@ -1,0 +1,30 @@
+/* element selectors */
+h1 {
+  color: blue;
+}
+
+/* class selector */
+/* NOTE: classes can be applied to many elements */
+.class-heading {
+  color: red;
+}
+
+/* id selector */
+/* NOTE: ids should only be applied to ONE element */
+#main {
+  color: green;
+}
+
+/* attribute selector */
+p[draggable] {
+  color: orange;
+}
+/* or you can be more specific */
+p[draggable='false'] {
+  color: black;
+}
+
+/* universal selector (selects all elements in document) */
+* {
+  color: yellow;
+}
