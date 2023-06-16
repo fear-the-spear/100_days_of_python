@@ -7,6 +7,7 @@ tempCodeRunnerFile.py
 
 # Cached Files
 __pycache__/
+.cache-dakotabb1
 
 # Apple Desktop Services Store File
 .DS_Store
