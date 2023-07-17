@@ -1,0 +1,11 @@
+Flask is a framework, not a library. Because of this, it will put certain
+restrictions and requirements on the code so that it will actually work.
+
+- TEMPLATES
+  · Templates need to be located in '[project-root]/templates/'
+  · In order to use templates, the method 'render_template' must be imported
+    from flask into the main project file (server.py, etc.)
+
+- STATIC FILES
+  · Static files like CSS, SASS, images, JavaScript, etc. are all to be placed
+    in '[project-root]/static/'
