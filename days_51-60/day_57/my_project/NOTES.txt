@@ -1,0 +1,37 @@
+Jinja Notes
+
+Jinja is a fast, expressive, extensible templating engine. Special placeholders
+in the template allow writing code similar to Python syntax. Then the template
+is passed data to render the final document.
+
+- Single Line Expressions (double curly braces)
+  {{ *python expression goes here* }}
+
+- Multi Line Statements
+  {% for loop goes here %}
+    <tag>{{ python content here }}</tag>
+  {% endfor %}
+
+  {% if statement goes here %}
+    <tag>{{ python here }}</tag>
+  {% else here %}
+    <tag>{{ python here }}</tag>
+  {% endif %}
+
+- Escaping
+  - you can escape entire blocks of text (e.g you're displaying a code block)
+  {% raw %}
+    <ul>
+    {% for item in seq %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+  {% endraw %}
+
+
+- URL Building
+  - jinja has a builtin method, url_for(), to use as an href's value
+    <a href='{{url_for('method_of_desired_page_from_main_flask_file')}}'>
+      Go To Blog
+    </a>
+    *REMEMBER: put the passed-in value for url_for() in quotations!
