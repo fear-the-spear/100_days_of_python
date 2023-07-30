@@ -6,7 +6,6 @@ from PRIVATE.variables import *
 # variables imported
 # APP_ID
 # API_KEY
-#
 
 date = dt.datetime.now().strftime('%d-%m-%Y')
 time = str(dt.datetime.now()).split(" ")[1].split(".")[0]
