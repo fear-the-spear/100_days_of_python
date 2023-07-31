@@ -1,0 +1,146 @@
+- Bootstrap Layout
+The 12 column Bootstrap layout system is the most common layout system.
+This layout system is most up of 3 (three) components:
+1. A div with the class 'container'
+2. A div with the class 'row'
+3. div(s) with a class of 'col'
+
+In html, this is what that looks like:
+<div class='container'>
+  <div class='row'>
+    <div class='col'>Hello</div>
+  </div>
+</div>
+
+- Sized Columns
+The 'col' class can be paired with a number to specify how many columns
+the element should occupy, e.g.:
+.col-2
+.col-4
+.col-6
+.col-8
+etc... (any number 1 thru 12)
+
+- Bootstrap Container Breakpoints (sizes in viewport width)
+
+                  extra sm   small     medium      large      x-lg      xx-lg
+                  <576px    >=576px    >=768px    >=992px   >=1200px   >=1400px
+————————————————————————————————————————————————————————————————————————————————
+.container         100%      540px      720px      960px     1140px     1320px
+.container-sm      100%      540px      720px      960px     1140px     1320px
+.container-md      100%      100%       720px      960px     1140px     1320px
+.container-lg      100%      100%       100%       960px     1140px     1320px
+.container-xl      100%      100%       100%       100%      1140px     1320px
+.container-xxl     100%      100%       100%       100%      100%       1320px
+.container-fluid   100%      100%       100%       100%      100%       100%
+
+* Container Exercise Solutions
+<div class="row">
+  <div class="col-xl-6">50% desktop, 100% mobile</div>
+  <div class="col-xl-6">50% desktop, 100% mobile</div>
+</div>
+
+<div class="row">
+  <div class="col-10 col-sm-12 col-lg-6">Column 1</div>
+  <div class="col-10 col-sm-6 col-lg-3">Column 2</div>
+  <div class="col-10 col-sm-6 col-lg-3">Column 3</div>
+</div>
+
+<div class="row">
+  <div class="col-xxl-1 col-xl-2 col-lg-4 col-md-6">Column 1</div>
+  <div class="col-xxl-11 col-xl-10 col-lg-8 col-md-6">Column 2</div>
+</div>
+
+- Bootstrap Components
+These are the pre-built cards, carouselsl, buttons, etc.
+
+* Buttons (.btn)
+button colors:
+class="btn btn-primary"   ->  blue
+class="btn btn-secondary" ->  dark gray
+class="btn btn-success"   ->  green
+class="btn btn-danger"    ->  red
+class="btn btn-warning"   ->  yellow
+class="btn btn-info"      ->  baby blue
+class="btn btn-light"     ->  light gray
+class="btn btn-dark"      ->  black
+button text styling:
+class="btn btn-link"      ->  underlined text
+
+- Spacing
+Bootstrap includes a wide range of shorthand responsive margin, padding, and gap
+utility classes to modify an element's appearance.
+
+* Margin and Padding
+Assign responsive-friendly margin or padding values to an element or a subset of
+it's sides with shorthand classes. This includes support for individual
+properties, all properties, and vertical and horizontal properties. Classes are
+built from a default Sass map ranging from .25rem to 3rem.
+
+* Notation
+Spacing utilities that apply to all breakpoints, from 'xs' to 'xxl', have no
+breakpoint abbreviation in them. This is because those classes are applied from
+'min-width: 0' and up, and thus are not bound by a media query. The remaining
+breakpoints, however, do include a breakpoint abbreviation.
+
+The classes are named using the format:
+{property}{sides}-{size} for 'xs'
+{property}{sides}-{breakpoint}-{size} for 'sm', 'md', 'lg', 'xl', 'xxl'
+
+/property/ is one of:
+'m' - for classes that set margin
+'p' - for classes that set padding
+
+/sides/ is one of:
+'t' - for classes that set 'margin-top' or 'padding-top'
+'b' - for classes that set 'margin-bottom' or 'padding-bottom'
+'s' - (start) for classes that set 'margin-left' & 'padding-left' in LTR,
+                                and 'margin-right' & 'padding-right' in RTL
+'e' - (end) for classes that set 'margin-right' & 'padding-right' in LTR,
+                                and 'margin-left' & 'padding-left' in RTL
+'x' - for classes that set both '*-left' & '*-right'
+'y' - for classes that set both '*-top' & '*-bottom'
+blank - for classes that set 'margin' or 'padding' on all 4 sides of the element
+
+/size/ is one of:
+'0' - for classes that eliminate the 'margin' or 'padding' by setting it to 0
+'1' - (by default) for classes that set the 'margin' or 'padding' to '$spacer * .25'
+'2' - (by default) for classes that set the 'margin' or 'padding' to '$spacer * .5'
+'3' - (by default) for classes that set the 'margin' or 'padding' to '$spacer'
+'4' - (by default) for classes that set the 'margin' or 'padding' to '$spacer * 1.5'
+'5' - (by default) for classes that set the 'margin' or 'padding' to '$spacer * 3'
+'auto' - for classes that set the 'margin' to auto
+
+(You can add more sizes by adding entries to the '$spacers' Sass map variable.)
+
+* Examples
+Here are some representative examples of these classes:
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ms-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
+
+* Horizontal Centering
+Additionally, Bootstrap also includes an '.mx-auto' class for horizontally
+centering fixed-width block level content - that is, content that has
+'display: block' and a 'width' set - by setting the horizontal margins to 'auto':
+
+<div class="mx-auto p-2" style="width: 200px;">
+  Centered element
+</div>
+
+- Adding Dark Mode To A Website
+In the html tag of the file, do this:
+<html lang="en" data-bs-theme="dark">
