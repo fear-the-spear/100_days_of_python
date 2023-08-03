@@ -1,3 +1,9 @@
+####################### .gitignore || 100_days_of_python #######################
+
+# UNCOMPLETED PROJECTS (added here on 8-2-23)
+day_49/
+day_51/
+
 # VS Code Settings
 .vscode/
 
