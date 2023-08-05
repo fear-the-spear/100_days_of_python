@@ -1,0 +1,6 @@
+A Quick Note About Day 60:
+
+For day 60, we are adding a working contact form to our website on day 59. So
+instead of copying all the code over to here, I'm going to leave it on day 59 -
+hopefully this note will make sense to anyone using this code for notes or
+anything else.
