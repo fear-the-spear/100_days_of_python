@@ -1,0 +1,17 @@
+Levels of Password Security
+
+LEVEL 1
+  - Simply storing a password as plain text in the database
+
+LEVEL 2 - Encryption
+  - A scrambling of the text
+  - Requires key or cipher method to scramble and unscramble
+
+LEVEL 3 - Hashing
+  - Doesn't require a key
+  - Uses a function to turn password into hash
+
+LEVEL 4 - Salting
+  - Generates a string of a certain length (a salt) and combines that
+    string with the password before hashing
+  - Can be salted by n rounds for extra security
