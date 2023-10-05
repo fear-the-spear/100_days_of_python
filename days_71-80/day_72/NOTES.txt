@@ -1,0 +1,20 @@
+Today's Learning Points
+  • Use .head(), .tail(), .shape, and .columns to explore a DataFrame and find
+    out the number of rows and columns as well as the column names
+
+  • Look for NaN (not a number) values with .findna() and consider using
+    .dropna() to clean up a DataFrame
+
+  • Access entire columns of a DataFrame using square bracket notation:
+    df['column name'] OR df[['col name 1', 'col name 2', 'col name 3']]
+
+  • Access individual cells in a DataFrame by chaining square brackets:
+    df['column name'][index] or df['column name'].loc[index]
+
+  • The largest and smallest values, as well as their postions, can be found
+    with methods like .max(), .min(), .idxmax(), and .idxmin()
+
+  • Sort a DataFrame with .sort_values() and add new columns with .insert()
+
+  • Create an Excel Style Pivot Table by grouping entries that belong
+    to a particular category with the use of .groupby()
