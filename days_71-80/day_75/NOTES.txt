@@ -1,0 +1,12 @@
+Today's Learning Points
+  • how to use .describe() to quickly see some descriptive stats at a glance
+  • how to use .resample() to make a time-series data comparable to another
+    by changing the periodicity
+  • how to work with matplotlib.dates Locators to better style a timeline
+  • how to find the number of NaN values with .isna().values.sum()
+  • how to change the resolution of a chart using the figure's dpi
+  • how to create a dashed '--' and dotted '-.' line using linestyles
+  • how to use different kinds of markers ('o' or '^') on charts
+  • fine-tune the styling of matplotlib charts by using limits, labels, linewidth,
+    and colors, both in the form of named colors and HEX codes
+  • use .grid() to help visually identify seasonality in a time series
